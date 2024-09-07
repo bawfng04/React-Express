@@ -45,6 +45,7 @@ function App() {
           );
         })}
       </div>
+
       <div className="API2div">
         <p>List of user api 2: </p>
         {
@@ -60,14 +61,29 @@ function App() {
           );
         })}
       </div>
-      <div className="APIMongoDBdiv">
+      <p>
         <p>List of user api Mongo: </p>
+      </p>
+      <div className="APIMongoDBdiv">
         {backendDataMongo.map((object, index) => {
           return (
-            <div key={index}>
-              <div className="divider"></div>
-              <p>{object.name} </p>
-              <p>{object.age}</p>
+            <div key={index} className="personUnit">
+              <div className="i4">
+                <p className="name">{object.name} </p>
+                <img
+                  src={object.avatar}
+                  alt={object.avatar}
+                  className="avatar"
+                ></img>
+              </div>
+              <p>Age: {object.age}</p>
+              <p>Address: {object.address}</p>
+              <p>Gender: {object.gender === "male" ? "Male" : "Female"}</p>
+              <p>Education: {object.education}</p>
+              <div className="contactInfo">
+                <p>Email: {object.email}</p>
+                <p>Phone number: {object.phone}</p>
+              </div>
             </div>
           );
         })}

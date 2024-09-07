@@ -11,3 +11,43 @@
   background-color: #ccc;
   margin: 20px 0;
 }
+
+.APIMongoDBdiv{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.personUnit{
+  background-color: rgb(238, 238, 238);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.personUnit:hover{
+  transform: scale(1.05);
+}
+
+.i4{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name{
+  font-weight: bold;
+}
+
+.avatar{
+  width: 100px;
+  border-radius: 50px;
+}
+
